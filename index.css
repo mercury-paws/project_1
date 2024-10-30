@@ -92,3 +92,70 @@
       url(../images/hero/hero-pic.jpg);
   }
 }
+
+/***************** add info section*********************/
+
+.additional-info .container {
+  padding: 20px 50px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.addIn-pic-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.addIn-pic {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(172, 173, 194, 0.7),
+    rgba(46, 47, 66, 0.7)
+  );
+  border: 3px solid var(--button);
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .additional-info .container {
+    padding: 40px 200px 40px 200px;
+
+    gap: 40px;
+  }
+
+  .addIn-pic-container {
+    flex-direction: row;
+  }
+
+  .addIn-pic {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(172, 173, 194, 0.7),
+      rgba(46, 47, 66, 0.7)
+    );
+    border: 3px solid var(--button);
+    border-radius: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .additional-info .container {
+    padding: 50px 250px 50px 250px;
+
+    gap: 50px;
+  }
+
+  .addIn-pic {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(172, 173, 194, 0.7),
+      rgba(46, 47, 66, 0.7)
+    );
+    border: 3px solid var(--button);
+    border-radius: 16px;
+  }
+}
