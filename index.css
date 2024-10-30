@@ -195,3 +195,30 @@
     width: 800px;
   }
 }
+
+.contact-us .container {
+  padding: 20px 50px 20px 50px;
+  background-color: var(--button);
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+.contactUs-header-text-block {
+  color: var(--secondary);
+}
+
+.contactUs-btn {
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  border-radius: 16px;
+}
+
+/* @media screen and (min-width: 768px) {
+ 
+} */
+/* @media screen and (min-width: 1200px) {
+
+} */
