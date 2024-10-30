@@ -110,6 +110,7 @@ a {
   --button: #3882f6;
   --button-hover: #054fc7;
 
+  /* additional colors */
   --accent: #f59e0b; /* Accent color for highlights, icons, or links */
   --yellow: #fbbf24;
   --orange: #fb923c;
@@ -117,19 +118,19 @@ a {
   --purple: #8b5cf6;
   --coral: #f472b6;
   --red: #ef4444;
-  --border-color: #cbd5e1; /* Light border color for dividers or card outlines */
-  --shadow-color: rgba(0, 0, 0, 0.2); /* Shadow color for subtle depth */
-  --input-bg: #f3f4f6; /* Background color for input fields */
-  --input-border: #d1d5db; /* Border color for inputs and cards */
-  --card-bg: #ffffff; /* Background color for cards or popups */
-  --disabled: #9ca3af; /* Color for disabled buttons */
-  --stroke: #4b5563; /* Darker stroke color for icons or subtle outlines */
-  --hover-bg: #f1f5f9; /* Background color for hover states on secondary elements */
+  --border-color: #cbd5e1;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --input-bg: #f3f4f6;
+  /--input-border: #d1d5db;
+  --card-bg: #ffffff;
+  --disabled: #9ca3af;
+  --stroke: #4b5563;
+  --hover-bg: #f1f5f9;
 
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(22, 22, 22, 0.87);
+  color: var(--main);
   background-color: var(--secondary);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -184,11 +185,13 @@ button:active {
 .container {
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
 }
 
 .section {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  /* padding-top: 16px; */
+  padding-bottom: 32px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -201,7 +204,11 @@ button:active {
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    max-width: 1300px;
+  }
+  .section {
+    max-width: 1400px;
+    margin: 0 auto;
   }
 }
 
