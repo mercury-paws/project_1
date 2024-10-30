@@ -160,6 +160,7 @@ button {
   padding: 8px;
   border-radius: 8px;
   border: none;
+  background-color: var(--button);
   transition: color 250ms linear, background-color 250ms linear;
 }
 
@@ -175,7 +176,7 @@ a:active {
 button:hover,
 button:focus,
 button:active {
-  background-color: var(--accent);
+  background-color: var(--button-hover);
   color: var(--main);
 }
 /************************* /general  ***************************/

@@ -3,9 +3,28 @@
 
 .hero {
   background-color: var(--main);
+  padding-top: 16px;
+}
+.hero .container {
+  padding: 100px 160px 100px 160px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 .hero-header-text-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  width: 500px;
+  line-height: 1;
+}
+
+.hero-header {
+  font-size: 48px;
+  color: var(--main-text);
+}
+.hero-text {
+  color: var(--secondary);
+  font-size: 18px;
 }
