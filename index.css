@@ -1,2 +1,11 @@
 /* @media screen and (min-width: 768px);
 @media screen and (min-width: 1200px); */
+
+.hero {
+  background-color: var(--main);
+}
+.hero-header-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
