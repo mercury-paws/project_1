@@ -1,0 +1,231 @@
+@import url("../commonCss/header.css");
+@import url("../commonCss/footer.css");
+
+/*************************** Reset styles ***************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration-line: none;
+  text-decoration: none;
+  transition: color 250ms linear;
+  color: inherit;
+  cursor: pointer;
+}
+/*************************** /Reset styles ***************************/
+
+/*************************************************** main styles ************************************************************/
+
+/*************************** fonts  **************************/
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../src/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../src/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../src/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Italic;
+  src: url(../src/fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Black;
+  src: url(../src/fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: Roboto-BlackItalic;
+  src: url(../src/fonts/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: Roboto-MediumItalic;
+  src: url(../src/fonts/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: Roboto-BoldItalic;
+  src: url(../src/fonts/Roboto-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Roboto-LightItalic;
+  src: url(../src/fonts/Roboto-LightItalic.ttf);
+}
+@font-face {
+  font-family: Roboto-ThinItalic;
+  src: url(../src/fonts/Roboto-ThinItalic.ttf);
+}
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(../src/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../src/fonts/Roboto-Regular.ttf);
+}
+
+/************************** /fonts  **************************/
+
+/************************* general  **************************/
+
+:root {
+  --font-family: "Roboto-Light", sans-serif;
+  --main: #1f2937;
+  --secondary: #e5e7eb;
+  --main-text: #f9faf8;
+  --logo-text: #f9faf8;
+  --button: #3882f6;
+  --button-hover: #054fc7;
+
+  --accent: #f59e0b; /* Accent color for highlights, icons, or links */
+  --yellow: #fbbf24;
+  --orange: #fb923c;
+  --green: #10b981;
+  --purple: #8b5cf6;
+  --coral: #f472b6;
+  --red: #ef4444;
+  --border-color: #cbd5e1; /* Light border color for dividers or card outlines */
+  --shadow-color: rgba(0, 0, 0, 0.2); /* Shadow color for subtle depth */
+  --input-bg: #f3f4f6; /* Background color for input fields */
+  --input-border: #d1d5db; /* Border color for inputs and cards */
+  --card-bg: #ffffff; /* Background color for cards or popups */
+  --disabled: #9ca3af; /* Color for disabled buttons */
+  --stroke: #4b5563; /* Darker stroke color for icons or subtle outlines */
+  --hover-bg: #f1f5f9; /* Background color for hover states on secondary elements */
+
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(22, 22, 22, 0.87);
+  background-color: var(--secondary);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto-Light, sans-serif;
+  background-color: var(--secondary);
+}
+
+input {
+  font-family: inherit;
+  background-color: var(--input-bg);
+  color: var(--main);
+}
+button {
+  font-family: inherit;
+  width: 125px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  transition: color 250ms linear, background-color 250ms linear;
+}
+
+a {
+  font-family: inherit;
+}
+a:hover,
+a:focus,
+a:active {
+  color: var(--accent);
+}
+
+button:hover,
+button:focus,
+button:active {
+  background-color: var(--accent);
+  color: var(--main);
+}
+/************************* /general  ***************************/
+
+/************************* parameters  *************************/
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.accent-color {
+  color: var(--accent);
+}
+
+/************************* /parameters  *************************/
+/*************************************************** /main styles ************************************************************/
