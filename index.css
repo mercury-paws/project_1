@@ -159,3 +159,39 @@
     border-radius: 16px;
   }
 }
+
+.inspiring-quote .container {
+  padding: 20px 50px 20px 50px;
+  background-color: var(--secondary);
+}
+
+.inspQuote {
+  font-style: italic;
+  font-size: 38px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .inspiring-quote .container {
+    padding: 20px 50px 20px 50px;
+  }
+
+  .inspQuote {
+    font-style: italic;
+    font-size: 48px;
+
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .inspiring-quote .container {
+    padding: 40px 200px 40px 200px;
+  }
+
+  .inspQuote {
+    font-style: italic;
+    font-size: 48px;
+    width: 800px;
+  }
+}
