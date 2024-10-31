@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="../../../commonCss/main.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header section">
+      <div class="header-container container">
+        <a class="home-page-logo" href="../../../../index.html">
+          <svg width="32" height="32">
+            <use href="./src/images/icons.svg#icon-someicon"></use>
+          </svg>
+        </a>
+        <nav class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-item-link link" href="../../../../index.html"
+              >Home</a
+            >
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link link" href="../../about/about.html"
+              >About</a
+            >
+          </li>
+          <li class="navigation-item">
+            <a
+              class="navigation-item-link link"
+              href="../../contact/contact.html"
+              >Contact</a
+            >
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-item-link link" href="../../sign/sign.html"
+              >Sign</a
+            >
+          </li>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="img">
+            <img src="../../../images/mercedes-wallpaper.jpg" alt="somecar" />
+          </div>
+
+          <div class="cont">
+            <form>
+              <div>
+                <label for="model">Select Model:</label>
+                <select id="model" name="mercedes-model">
+                  <option value="a-class">A-Class</option>
+                  <option value="b-class">B-Class</option>
+                  <option value="c-class">C-Class</option>
+                  <option value="e-class">E-Class</option>
+                  <option value="s-class">S-Class</option>
+                  <option value="g-class">G-Class</option>
+                  <option value="gle">GLE</option>
+                  <option value="glc">GLC</option>
+                  <option value="cla">CLA</option>
+                  <option value="cls">CLS</option>
+                  <option value="sl">SL</option>
+                  <option value="amg">AMG</option>
+                  <option value="eq-models">EQ Models (EQA, EQC, EQS)</option>
+                </select>
+              </div>
+              <div>
+                <label for="mileage">Select Mileage:</label>
+                <select name="mileage" id="mileage">
+                  <option value="under-10k">Under 10,000 miles</option>
+                  <option value="10k-20k">10,000 - 20,000 miles</option>
+                  <option value="20k-30k">20,000 - 30,000 miles</option>
+                  <option value="30k-40k">30,000 - 40,000 miles</option>
+                  <option value="40k-50k">40,000 - 50,000 miles</option>
+                  <option value="50k-60k">50,000 - 60,000 miles</option>
+                  <option value="60k-70k">60,000 - 70,000 miles</option>
+                  <option value="70k-80k">70,000 - 80,000 miles</option>
+                  <option value="80k-90k">80,000 - 90,000 miles</option>
+                  <option value="90k-100k">90,000 - 100,000 miles</option>
+                  <option value="over-100k">Over 100,000 miles</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="body-type">Select Body Type:</label>
+                <select name="body-type" id="body-type">
+                  <option value="sedan">Sedan</option>
+                  <option value="suv">SUV</option>
+                  <option value="hatchback">Hatchback</option>
+                  <option value="coupe">Coupe</option>
+                  <option value="convertible">Convertible</option>
+                  <option value="wagon">Wagon</option>
+                </select>
+              </div>
+              <div>
+                <label for="year">Select Year of Manufacture:</label>
+                <select name="year" id="year">
+                  <option value="2024">2024</option>
+                  <option value="2023">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                </select>
+              </div>
+              <div>
+                <label for="fuel">Select Fuel Type:</label>
+                <select name="fuel" id="fuel">
+                  <option value="petrol">Petrol</option>
+                  <option value="diesel">Diesel</option>
+                  <option value="electric">Electric</option>
+                  <option value="hybrid">Hybrid</option>
+                </select>
+              </div>
+              <div>
+                <label for="price-range">Select Price Range:</label>
+                <select name="price-range" id="price-range">
+                  <option value="under-10k">Under $10,000</option>
+                  <option value="10k-20k">$10,000 - $20,000</option>
+                  <option value="20k-30k">$20,000 - $30,000</option>
+                  <option value="30k-40k">$30,000 - $40,000</option>
+                  <option value="40k-50k">$40,000 - $50,000</option>
+                  <option value="over-50k">Over $50,000</option>
+                </select>
+              </div>
+              <button type="submit">Check availability</button>
+            </form>
+
+            <h2 class="quote">
+              "In every vehicle, we strive for the perfect balance of innovation
+              and practicality, ensuring that we meet the diverse needs of our
+              customers."
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="footer-container">
+        <p>copyright</p>
+      </div>
+    </footer>
+  </body>
+</html>
