@@ -205,10 +205,10 @@ button:active {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1300px;
+    max-width: 100%;
   }
   .section {
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
