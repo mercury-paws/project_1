@@ -1,64 +1,120 @@
 /* @media screen and (min-width: 768px);
 @media screen and (min-width: 1200px); */
 
+.home-page-logo {
+  color: var(--logo-text);
+  line-height: normal;
+  font-family: "Roboto-Bold";
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
 .hero {
   background-color: var(--main);
 }
 .hero .container {
   padding: 50px 32px 50px 32px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
 }
+main > .hero {
+  position: relative;
+}
+main .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(31, 41, 55, 1),
+    rgba(31, 41, 55, 1),
+    rgba(31, 41, 55, 1),
+    rgba(173, 216, 230, 0.2),
+    rgba(31, 41, 55, 1),
+    rgba(31, 41, 55, 1),
+    rgba(31, 41, 55, 1)
+  );
+  background-size: 400% 400%;
+  animation: gradient 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  z-index: 1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .hero-header-text-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  line-height: 1;
+
+  gap: 18px;
+  line-height: 1.2;
+  z-index: 2;
 }
 
 .hero-header {
-  font-size: 38px;
+  font-size: 48px;
   color: var(--main-text);
+  text-transform: capitalize;
+  min-width: 320px;
 }
 .hero-text {
   color: var(--secondary);
-  font-size: 12px;
+  font-size: 18px;
 }
 .hero-img {
-  width: 240px;
-  height: 200px;
-  margin: 0 auto;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(172, 173, 194, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/hero/hero-pic.jpg);
-  background-size: cover;
-  background-repeat: no repeat;
+  z-index: 2;
 
+  /* background-image: linear-gradient(
+    to bottom,
+    rgba(172, 173, 194, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ); */
+
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.sing-up-btn {
+  margin-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .hero .container {
     padding: 70px 80px 70px 80px;
-
+    justify-content: center;
     flex-direction: row;
+    flex-wrap: nowrap;
   }
   .hero-header-text-container {
-    width: 500px;
+    min-width: 250px;
   }
 
   .hero-header {
-    font-size: 38px;
+    font-size: 48px;
   }
   .hero-text {
     font-size: 16px;
   }
-  .hero-img {
+  /* .hero-img {
     width: 450px;
     height: 200px;
     background-image: linear-gradient(
@@ -67,7 +123,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/hero-pic.jpg);
-  }
+  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -81,7 +137,7 @@
   .hero-text {
     font-size: 18px;
   }
-  .hero-img {
+  /* .hero-img {
     width: 450px;
     height: 200px;
     background-image: linear-gradient(
@@ -90,13 +146,13 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/hero-pic.jpg);
-  }
+  } */
 }
 
 /***************** add info section*********************/
 
 .additional-info .container {
-  padding: 20px 50px 20px 50px;
+  padding: 20px 80px 20px 80px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -106,96 +162,133 @@
 
 .addIn-pic-container {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
 .addIn-pic {
+  width: 200px; /* Set fixed width */
+  height: 200px;
   background-image: linear-gradient(
     to bottom,
     rgba(172, 173, 194, 0.7),
     rgba(46, 47, 66, 0.7)
   );
-  border: 3px solid var(--button);
+
   border-radius: 16px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.addIn-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.addIn-pic-block {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--button);
+  border-radius: 16px;
+  gap: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+}
+.addIn-pic-block:hover {
+  transform: translateY(-2px);
+}
+.addIn-text {
+  margin-bottom: 8px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .additional-info .container {
-    padding: 40px 200px 40px 200px;
+    padding: 40px 100px 40px 100px;
 
     gap: 40px;
   }
 
-  .addIn-pic-container {
-    flex-direction: row;
-  }
-
   .addIn-pic {
     background-image: linear-gradient(
       to bottom,
       rgba(172, 173, 194, 0.7),
       rgba(46, 47, 66, 0.7)
     );
-    border: 3px solid var(--button);
+
     border-radius: 16px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .additional-info .container {
-    padding: 50px 250px 50px 250px;
+    padding: 50px 155px 50px 155px;
 
     gap: 50px;
   }
-
-  .addIn-pic {
-    background-image: linear-gradient(
-      to bottom,
-      rgba(172, 173, 194, 0.7),
-      rgba(46, 47, 66, 0.7)
-    );
-    border: 3px solid var(--button);
-    border-radius: 16px;
-  }
 }
 
+/***************** quote section*********************/
+
+.inspiring-quote {
+  background-color: var(--secondary);
+  padding-top: 32px;
+}
 .inspiring-quote .container {
   padding: 20px 50px 20px 50px;
-  background-color: var(--secondary);
+  margin: 0 auto;
 }
 
-.inspQuote {
+.container .inspQuote {
+  font-family: "Roboto-LightItalic";
   font-style: italic;
-  font-size: 38px;
+  font-size: 36px;
   text-align: center;
+}
+
+.author {
+  font-family: "Roboto-Thin";
+  font-size: 16px;
+  text-align: right;
+  font-style: normal;
 }
 
 @media screen and (min-width: 768px) {
   .inspiring-quote .container {
-    padding: 20px 50px 20px 50px;
+    padding: 20px 100px 20px 100px;
+    height: auto;
   }
 
   .inspQuote {
-    font-style: italic;
-    font-size: 48px;
-
-    width: 700px;
+    font-size: 36px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  .inspiring-quote .container {
+  /* .inspiring-quote .container {
     padding: 40px 200px 40px 200px;
-  }
+  } */
 
   .inspQuote {
-    font-style: italic;
-    font-size: 48px;
-    width: 800px;
+    font-size: 36px;
+    width: 700px;
   }
 }
 
+.contact-us {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 .contact-us .container {
   padding: 20px 50px 20px 50px;
   background-color: var(--button);
