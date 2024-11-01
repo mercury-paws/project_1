@@ -1,175 +1,194 @@
 body {
-    font-family: "Roboto-Bold";
-    margin: 0;
-    padding: 0;
-    color: #1F2937;
+  font-family: "Roboto-Bold";
+  margin: 0;
+  padding: 0;
+  color: #1f2937;
 }
 .hero {
-    min-height: 450px;
-    background-image: url('https://images.unsplash.com/photo-1561240776-d9c35e3f7202?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size:cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-blend-mode:soft-light; 
-    color: #F9FAF8;
-    padding: 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  min-height: 450px;
+  background-image: url("https://images.unsplash.com/photo-1561240776-d9c35e3f7202?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  color: #f9faf8;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .hero h1 {
-    font-size: 48px;
-    font-weight: 800;
-    margin: 0;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
 }
 
 .hero img {
-    width: 40%;
-    height: auto;
+  width: 40%;
+  height: auto;
 }
 
-.story-section, .mission-section {
-    display: flex;
-    justify-content: space-between;
+.story-section,
+.mission-section {
+  display: flex;
+  justify-content: space-between;
 }
 
-.story-section img, .mission-section img {
-    width: 40%;
-    padding: 4rem;
-    height: auto;
-    flex: 1;
+.story-section img,
+.mission-section img {
+  width: 40%;
+  padding: 4rem;
+  height: auto;
+  flex: 1;
 }
 
-.our-story, .our-mission {
-    background-color: #1F2937;
-    color: #F9FAF8;
-    width: 40%;
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 2rem;
+.our-story,
+.our-mission {
+  background-color: #1f2937;
+  color: #f9faf8;
+  width: 40%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2rem;
 }
 
 .list-section {
-    background-color: #E5E7EB;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  background-color: #e5e7eb;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.why-choose-us, .our-values {
-    padding: 2rem;
-    text-align: left;
-    display: flex;
-    flex:1;
-    gap: 2rem;
+.why-choose-us,
+.our-values {
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex: 1;
+  gap: 2rem;
 }
-
-
 
 section h2 {
-    font-size: 36px;
-    font-weight: 800;
-    text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
 }
-
 
 section p {
-    font-size: 18px;
-    line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-
 ul {
-    padding-left: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 ul li {
-    list-style-type: disc;
-    margin-bottom: 0.5rem;
-    font-size: 18px;
+  list-style-type: disc;
+  margin-bottom: 0.5rem;
+  font-size: 18px;
 }
 
-
-
 .call-to-action {
-    background-color: #1F2937;
-    color: #F9FAF8;
-    padding: 2rem;
-    text-align: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 2rem;
+  text-align: center;
 }
 
 .call-to-action h2 {
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 1rem;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 1rem;
 }
 
 .call-to-action p {
-    font-size: 18px;
-    margin-bottom: 1.5rem;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
 }
 
 .call-to-action .button {
-    font-size: 18px;
-    padding: 0.8rem 1.5rem;
-    background-color: #E5E7EB;
-    color: #3882F6;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  font-size: 18px;
+  padding: 0.8rem 1.5rem;
+  background-color: #e5e7eb;
+  color: #3882f6;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .call-to-action .button:hover {
-    background-color: #F9FAF8;
+  background-color: #f9faf8;
 }
 
 @media (max-width: 768px) {
+  .story-section,
+  .mission-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
 
-    .story-section, .mission-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-    }
+  .story-section img,
+  .mission-section img {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
 
-    .story-section img, .mission-section img {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 1rem;
-    }
+  .our-story,
+  .our-mission {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
 
-    .our-story, .our-mission {
-        width: 100%;
-        padding: 2rem;
-        text-align: center;
-    }
+  .hero h1 {
+    font-size: 32px;
+  }
 
-    .hero h1 {
-        font-size: 32px;
-    }
+  .hero p,
+  section p,
+  ul li,
+  .call-to-action p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 
-    .hero p, section p, ul li, .call-to-action p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+  .list-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-    .list-section {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .why-choose-us, .our-values {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        padding: 1rem;
-    }
+  .why-choose-us,
+  .our-values {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
 }
 
+/************** navigation current check-line ******************/
+
+.navigation-item {
+  position: relative;
+}
+
+.navigation-list li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--button);
+}

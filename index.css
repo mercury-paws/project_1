@@ -1,15 +1,6 @@
 /* @media screen and (min-width: 768px);
 @media screen and (min-width: 1200px); */
 
-.home-page-logo {
-  color: var(--logo-text);
-  line-height: normal;
-  font-family: "Roboto-Bold";
-  font-weight: 600;
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
 .hero {
   background-color: var(--main);
 }
@@ -316,4 +307,20 @@ main .hero::before {
     align-items: center;
     gap: 8px;
   }
+}
+
+/************** navigation current check-line ******************/
+
+.navigation-item {
+  position: relative;
+}
+
+.navigation-list li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--button);
 }
