@@ -11,6 +11,11 @@ body {
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
   padding: 5rem 2rem;
   text-align: center;
   color: #f9faf8;
@@ -82,6 +87,7 @@ body {
 
 .submit-button {
   padding: 0.8rem;
+  width: 100%;
   font-size: 18px;
   font-weight: bold;
   color: #f9faf8;
