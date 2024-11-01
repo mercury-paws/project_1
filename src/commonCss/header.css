@@ -3,6 +3,10 @@
   height: 70px;
 }
 
+.home-page-logo:hover .accent-color {
+  color: var(--logo-text);
+}
+
 .home-page-logo {
   color: var(--logo-text);
   line-height: normal;
