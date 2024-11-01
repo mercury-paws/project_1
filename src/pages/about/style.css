@@ -1,16 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto-Bold";
     margin: 0;
     padding: 0;
     color: #1F2937;
 }
 .hero {
-    min-height: 500px;
+    min-height: 450px;
     background-image: url('https://images.unsplash.com/photo-1561240776-d9c35e3f7202?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size:cover;
     background-position: center; 
     background-repeat: no-repeat;
-    background-color: #1F2937;
+    background-blend-mode:soft-light; 
     color: #F9FAF8;
     padding: 2rem;
     text-align: center;
@@ -25,11 +25,6 @@ body {
     font-size: 48px;
     font-weight: 800;
     margin: 0;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #E5E7EB;
 }
 
 .hero img {
@@ -89,7 +84,6 @@ section h2 {
 section p {
     font-size: 18px;
     line-height: 1.6;
-
 }
 
 
@@ -137,18 +131,45 @@ ul li {
     background-color: #F9FAF8;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .hero h1, .section h2 {
+
+    .story-section, .mission-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .story-section img, .mission-section img {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .our-story, .our-mission {
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .hero h1 {
         font-size: 32px;
     }
 
-    .call-to-action h2 {
-        font-size: 28px;
+    .hero p, section p, ul li, .call-to-action p {
+        font-size: 16px;
+        line-height: 1.5;
     }
 
-    .call-to-action .button {
-        font-size: 16px;
-        padding: 0.6rem 1.2rem;
+    .list-section {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .why-choose-us, .our-values {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
     }
 }
+
