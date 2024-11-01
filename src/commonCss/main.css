@@ -166,6 +166,7 @@ button {
 
 a {
   font-family: inherit;
+  transition: color 250ms linear;
 }
 a:hover,
 a:focus,
