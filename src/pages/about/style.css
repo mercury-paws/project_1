@@ -11,7 +11,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
-  opacity: 0.5;
+  opacity: 0.8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   color: #f9faf8;
   padding: 2rem;
   text-align: center;
