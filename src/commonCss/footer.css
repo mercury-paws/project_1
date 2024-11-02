@@ -37,10 +37,14 @@
   gap: 10px;
   justify-content: center;
   align-items: center;
-  fill: var(--secondary);
+
   margin-left: 125px;
   cursor: pointer;
   line-height: 0;
+}
+
+.icons svg {
+  fill: var(--secondary);
 }
 
 .icons svg:nth-child(1):hover,
