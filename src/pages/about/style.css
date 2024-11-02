@@ -1,9 +1,14 @@
 body {
-  font-family: "Roboto-Bold";
+  /* font-family: "Roboto-Bold"; */
   margin: 0;
   padding: 0;
   color: #1f2937;
 }
+
+main{
+  font-family: Roboto-Bold;
+}
+
 .hero {
   min-height: 450px;
   background-image: url("https://images.unsplash.com/photo-1561240776-d9c35e3f7202?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
