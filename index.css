@@ -4,6 +4,9 @@
 .hero {
   background-color: var(--main);
 }
+body {
+  margin: 0;
+}
 .hero .container {
   padding: 50px 32px 50px 32px;
   display: flex;
@@ -168,7 +171,6 @@ main .hero::before {
     rgba(172, 173, 194, 0.7),
     rgba(46, 47, 66, 0.7)
   );
-
   border-radius: 16px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -182,6 +184,8 @@ main .hero::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 3px solid var(--button);
+  border-radius: 16px;
 }
 .addIn-pic-block {
   display: flex;
@@ -189,7 +193,7 @@ main .hero::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--button);
+
   border-radius: 16px;
   gap: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -266,9 +270,9 @@ main .hero::before {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* .inspiring-quote .container {
+  .inspiring-quote .container {
     padding: 40px 200px 40px 200px;
-  } */
+  }
 
   .inspQuote {
     font-size: 36px;
